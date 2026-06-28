@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumière — Flavours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:#0f0b14;color:#ece7f2;line-height:1.6;padding:48px 24px 80px}
+  .wrap{max-width:1100px;margin:0 auto}
+  h1{font-family:'Playfair Display',serif;font-size:42px;font-weight:700;text-align:center;margin-bottom:10px}
+  h1 span{color:#ffb020}
+  .sub{text-align:center;color:#a99fb6;font-size:17px;max-width:620px;margin:0 auto 46px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+  .card{border-radius:18px;overflow:hidden;border:1px solid #2a2333;background:#171221;transition:.2s;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-5px);border-color:#473a57;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+  .swatch{height:120px;display:flex;align-items:flex-end;padding:14px;position:relative}
+  .swatch .name{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+  .body{padding:18px 20px 22px}
+  .body p{font-size:14px;color:#b3a9c0;margin-bottom:16px;min-height:60px}
+  .body .meta{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#7d728c;margin-bottom:8px;font-weight:600}
+  .links{display:flex;gap:10px}
+  .links a{flex:1;text-align:center;padding:10px;border-radius:30px;font-size:14px;font-weight:600;transition:.18s}
+  .open{background:#ffb020;color:#2b2230}
+  .open:hover{filter:brightness(1.08)}
+  .foot{text-align:center;margin-top:46px;color:#7d728c;font-size:13px}
+  /* swatches */
+  .s-orig{background:linear-gradient(135deg,#6d28d9,#c026d3 50%,#ec4899)}
+  .s-noir{background:radial-gradient(120% 120% at 80% 0%,#241a10,#120d08 60%,#0a0709)}
+  .s-clin{background:linear-gradient(135deg,#0e7490,#0d9488 55%,#22c1c3)}
+  .s-sun{background:linear-gradient(135deg,#f97316,#fb7185 48%,#e11d74)}
+  .s-bot{background:linear-gradient(135deg,#4d7c0f,#3f6212 55%,#1f3009)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Lumi<span>è</span>re — pick a flavour</h1>
+  <p class="sub">Five takes on the same landing page. Identical copy and sections — different brand mood, palette, and typography. Click any one to open the full page.</p>
+  <div class="grid">
+
+    <div class="card">
+      <div class="swatch s-orig"><span class="name">Original</span></div>
+      <div class="body">
+        <div class="meta">Plum · Rose · Gold</div>
+        <p>The original site. Elegant plum-and-rose with gold accents and a Playfair Display serif. Feminine, premium, polished.</p>
+        <div class="links"><a class="open" href="index-original.html">Open →</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="swatch s-noir"><span class="name">Noir Luxe</span></div>
+      <div class="body">
+        <div class="meta">Black · Champagne Gold</div>
+        <p>Dark, editorial, quiet-luxury. Black canvas with champagne-gold accents and a high-contrast Cormorant Garamond serif. Reads expensive.</p>
+        <div class="links"><a class="open" href="index-noir.html">Open →</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="swatch s-clin"><span class="name">Clinical Calm</span></div>
+      <div class="body">
+        <div class="meta">Teal · Sky · Navy</div>
+        <p>Clean, medical, trustworthy SaaS. Teal-and-sky palette with the geometric Sora typeface. Leads with credibility and compliance.</p>
+        <div class="links"><a class="open" href="index-clinical.html">Open →</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="swatch s-sun"><span class="name">Sunset Glow</span></div>
+      <div class="body">
+        <div class="meta">Coral · Amber · Magenta</div>
+        <p>Warm, friendly, approachable. Coral-to-magenta gradients with the soft Fraunces serif. Inviting and energetic without losing polish.</p>
+        <div class="links"><a class="open" href="index-sunset.html">Open →</a></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="swatch s-bot"><span class="name">Botanical Spa</span></div>
+      <div class="body">
+        <div class="meta">Sage · Cream · Terracotta</div>
+        <p>Natural organic-wellness vibe. Sage green, cream, and terracotta with the bold DM Serif Display. Earthy, calm, holistic.</p>
+        <div class="links"><a class="open" href="index-botanical.html">Open →</a></div>
+      </div>
+    </div>
+
+  </div>
+  <p class="foot">Lumière — a placeholder brand for demonstration. Each flavour is a standalone HTML file.</p>
+</div>
+</body>
+</html>
